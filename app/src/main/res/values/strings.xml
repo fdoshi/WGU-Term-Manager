@@ -1,0 +1,81 @@
+<resources>
+    <string name="app_name">WGU Term Manager</string>
+
+    <!-- General Strings -->
+    <string name="title_input_label">Title:</string>
+    <string name="start_date_label">Start Date:</string>
+    <string name="end_date_label">End Date:</string>
+    <string name="course_status_label">Status:</string>
+    <string name="date_format">yyyy-mm-dd</string>
+    <string name="list_arrow"><![CDATA[>]]></string>
+    <string name="edit_heading">Edit</string>
+    <string name="delete_heading">Delete</string>
+    <string name="alert_default">ON/OFF</string>
+    <string name="alert_off">Off</string>
+    <string name="channel_name">Term Manager</string>
+    <string name="channel_description">Course Alert</string>
+    <string name="channel_id">100</string>
+
+    <!-- Menus -->
+    <string name="add_menu">ADD</string>
+    <string name="save_menu">SAVE</string>
+    <string name="cancel_menu">CANCEL</string>
+    <string name="edit_menu">EDIT</string>
+    <string name="delete_menu">DELETE</string>
+    <string name="share_menu">SHARE</string>
+
+    <!-- activity_assessment_add  -->
+    <string name="type_label">Type:</string>
+    <string name="due_date_label">Due Date:</string>
+    <string name="goal_date_heading">Goal Dates</string>
+    <string name="description_heading">Description</string>
+    <string name="date_heading">Date</string>
+    <string name="add_goal_date_button">Add Goal Date</string>
+
+    <!-- activity_course_add -->
+    <string name="course_mentors_label">Mentors</string>
+    <string name="course_mentors_name_heading">Mentor Name</string>
+    <string name="course_mentors_phone_heading">Phone</string>
+    <string name="course_mentors_email_heading">Email</string>
+    <string name="course_add_mentor_button">Add Mentor</string>
+
+    <!-- activity_course_details -->
+    <string name="course_start_alert_label">Course Start Alert :</string>
+    <string name="course_end_alert_label">Course End Alert:</string>
+    <string name="view_assessments">View Assessments</string>
+    <string name="view_notes">View Notes</string>
+
+    <!-- activity_assessment_details -->
+    <string name="goal_date_alert_heading">Alert</string>
+    <string name="alert_toggle">Toggle</string>
+
+    <!-- activity_main -->
+    <string name="main_button_terms">Terms</string>
+
+    <!-- activity_notes -->
+    <string name="note_title">Notes</string>
+    <string name="note_hint">Enter a note</string>
+    <string name="note_add">Add Note</string>
+
+    <!-- activity_term_details -->
+    <string name="button_view_courses">View Courses</string>
+
+    <!-- list_row_assessment_row -->
+    <string name="assessment_list_view_assessment">View Assessment</string>
+
+    <!-- list_row_course_row -->
+    <string name="course_list_view_course">View Course</string>
+
+    <!-- list_row_term_row -->
+    <string name="view_term">View Term</string>
+    <string name="title_activity_term_list">TermListActivity</string>
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+</resources>

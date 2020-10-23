@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_2"
+    tools:context=".Activities.AddCourseActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:id="@+id/title_input_row">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/title_input_label"
+            android:labelFor="@id/title_input"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:gravity="center_vertical"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp" />
+        <EditText
+            android:id="@+id/title_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:id="@+id/start_input_row"
+        android:layout_below="@id/title_input_row">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/start_date_label"
+            android:labelFor="@id/start_input"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:gravity="center_vertical"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp" />
+        <EditText
+            android:id="@+id/start_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:id="@+id/end_input_row"
+        android:layout_below="@id/start_input_row">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/end_date_label"
+            android:labelFor="@id/end_input"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:gravity="center_vertical"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp" />
+        <EditText
+            android:id="@+id/end_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:id="@+id/status_input_row"
+        android:layout_below="@id/end_input_row">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="10dp"
+            android:gravity="center_vertical"
+            android:labelFor="@id/status_spinner"
+            android:text="@string/course_status_label"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:layout_marginRight="10dp" />
+        <Spinner
+            android:id="@+id/status_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+<!--        <EditText-->
+<!--            android:id="@+id/status_input"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:ems="10"-->
+<!--            android:inputType="textPersonName" />-->
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/status_input_row"
+        android:text="@string/course_mentors_label"
+        android:layout_margin="8dp"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:id="@+id/mentors_label"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mentors_label"
+        android:layout_margin="8dp"
+        android:orientation="horizontal"
+        android:id="@+id/mentors_headings">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight=".9"
+            android:text="@string/course_mentors_name_heading"
+            android:textColor="#000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight=".9"
+            android:text="@string/course_mentors_phone_heading"
+            android:textColor="#000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight=".9"
+            android:text="@string/course_mentors_email_heading"
+            android:textColor="#000" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/edit_heading"
+            android:textColor="#000"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/delete_heading"
+            android:textColor="#000"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list_view_mentors"
+        android:layout_below="@id/mentors_headings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/list_view_mentors"
+        android:text="@string/course_add_mentor_button"
+        android:id="@+id/button_add_mentor"/>
+
+</RelativeLayout>

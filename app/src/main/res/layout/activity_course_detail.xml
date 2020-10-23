@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_2"
+    tools:context=".Activities.CourseDetailActivity">
+
+    <TextView
+        android:id="@+id/course_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:textColor="#000"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:orientation="horizontal"
+        android:id="@+id/course_start"
+        android:layout_below="@id/course_title">
+        <TextView
+            android:id="@+id/course_start_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/start_date_label"
+            android:textColor="#000"
+            android:textSize="30sp" />
+        <TextView
+            android:id="@+id/course_start_date_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/date_format"
+            android:textSize="25sp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:orientation="horizontal"
+        android:id="@+id/course_start_alert"
+        android:layout_below="@id/course_start">
+        <TextView
+            android:id="@+id/course_start_date_alert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/course_start_alert_label"
+            android:textColor="#000"
+            android:textSize="15sp" />
+
+        <Switch
+            android:id="@+id/switch_start_alert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.95"
+            android:checked="false"
+            android:text=" ON/OFF"
+            android:textOff="OFF"
+            android:textOn="On" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/course_start_alert"
+        android:layout_margin="8dp"
+        android:orientation="horizontal"
+        android:id="@+id/course_end">
+
+        <TextView
+            android:id="@+id/course_end_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/end_date_label"
+            android:textColor="#000"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/course_end_date_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/date_format"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:orientation="horizontal"
+        android:id="@+id/course_end_alert"
+        android:layout_below="@id/course_end">
+        <TextView
+            android:id="@+id/course_end_date_alert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/course_end_alert_label"
+            android:textSize="15sp"
+            android:textColor="#000"/>
+
+        <Switch
+            android:id="@+id/switch_end_alert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.95"
+            android:text=" ON/OFF"
+            android:textOff="OFF"
+            android:textOn="On" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/course_end_alert"
+        android:layout_margin="8dp"
+        android:orientation="horizontal"
+        android:id="@+id/course_status">
+
+        <TextView
+            android:id="@+id/course_status_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/course_status_label"
+            android:textColor="#000"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/course_status_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/course_status"
+        android:text="@string/course_mentors_label"
+        android:layout_margin="8dp"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:id="@+id/mentors_label"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mentors_label"
+        android:layout_margin="8dp"
+        android:orientation="horizontal"
+        android:id="@+id/mentors_headings">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight=".9"
+            android:text="@string/course_mentors_name_heading"
+            android:textColor="#000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight=".9"
+            android:text="@string/course_mentors_phone_heading"
+            android:textColor="#000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight=".9"
+            android:text="@string/course_mentors_email_heading"
+            android:textColor="#000" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list_view_mentors"
+        android:layout_width="416dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/mentors_headings"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"></ListView>
+
+    <Button
+        android:id="@+id/button_view_assessments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/list_view_mentors"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:onClick="viewAssessmentsButtonClick"
+        android:text="@string/view_assessments"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/button_view_notes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/list_view_mentors"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_toEndOf="@id/button_view_assessments"
+        android:layout_toRightOf="@id/button_view_assessments"
+        android:onClick="viewNotesButtonClick"
+        android:text="@string/view_notes"
+        android:visibility="visible" />
+
+
+
+
+</RelativeLayout>

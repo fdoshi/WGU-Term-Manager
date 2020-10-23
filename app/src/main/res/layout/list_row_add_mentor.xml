@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/mentor_list_row">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight=".95"
+        android:gravity="center_vertical"
+        android:id="@+id/mentor_list_name"
+        android:text="@string/course_mentors_name_heading"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight=".95"
+        android:gravity="center_vertical"
+        android:id="@+id/mentor_list_phone"
+        android:text="@string/course_mentors_phone_heading"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight=".95"
+        android:gravity="center_vertical"
+        android:id="@+id/mentor_list_email"
+        android:text="@string/course_mentors_email_heading" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="@string/edit_heading"
+        android:textSize="10sp"
+        android:id="@+id/button_edit"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="@string/delete_heading"
+        android:textSize="10sp"
+        android:id="@+id/button_delete"/>
+
+
+</LinearLayout>

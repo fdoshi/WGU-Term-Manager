@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_2"
+    tools:context=".Activities.AssessmentDetailActivity">
+
+    <TextView
+        android:id="@+id/assessment_title"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_margin="8dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:textColor="#000"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:orientation="horizontal"
+        android:id="@+id/assessment_type_row"
+        android:layout_below="@id/assessment_title">
+        <TextView
+            android:id="@+id/assessment_type_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/type_label"
+            android:textColor="#000"
+            android:textSize="30sp" />
+        <TextView
+            android:id="@+id/assessment_type_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/assessment_type_row"
+        android:layout_margin="8dp"
+        android:orientation="horizontal"
+        android:id="@+id/assessment_due_row">
+        <TextView
+            android:id="@+id/assessment_due_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/due_date_label"
+            android:textColor="#000"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/assessment_due_date_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/date_format"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/assessment_due_row"
+        android:layout_margin="8dp"
+        android:orientation="horizontal"
+        android:id="@+id/goal_row">
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/goal_date_heading"
+        android:layout_margin="8dp"
+        android:textSize="20sp"
+        android:textColor="#000"/>
+
+        <Switch
+            android:id="@+id/goal_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:paddingLeft="10dp"
+            android:paddingRight="15dp"
+            android:layout_margin="8dp"
+            android:text="Alert"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/goal_row"
+        android:layout_margin="8dp"
+        android:orientation="horizontal"
+        android:id="@+id/goal_date_headings">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/description_heading"
+            android:textColor="#000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/date_heading"
+            android:textColor="#000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text=""
+            android:textColor="#000" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list_view_goal_dates"
+        android:layout_below="@id/goal_date_headings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"/>
+
+
+
+</RelativeLayout>
